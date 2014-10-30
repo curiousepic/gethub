@@ -11,7 +11,7 @@ $(document).on('ready', function () {
             .append('<p>Demesne: ' + data.location + '</p>')
             .append('<p>Reach: <a href="mailto:' + data.email + '">' + data.email + '</a></p>')
             .append('<p>Read: <a href="' + data.blog + '">twitter.com/curiousepic</a></p>')
-            .append('<p>Joined: ' + data.created_at + '</p>')
+            .append('<p>Joined: ' + moment(data.created_at, "YYYY-MM-DDThh:mm:ssZ").fromNow() + '</p>')
             .append('<p>Repos: ' + data.public_repos + '</p>')
             .append('<p>Followers: ' + data.followers + '</p>')
             .append('<p>Following: ' + data.following + '</p>');
@@ -29,10 +29,10 @@ $(document).on('ready', function () {
 //                        fork(repo.fork);
                         '</a></h3>')
                     .append('<p>' + repo.description + '</p>')
+                    .append('<p>Last Updated: ' + moment(repo.updated_at, "YYYY-MM-DDThh:mm:ssZ").fromNow() + '</p>')
                     .append('<p>Main Language: ' + repo.language + '</p>')
                     .append('<p>Stargazers: ' + repo.stargazers_count + '</p>')
                     .append('<p>Forks: ' + repo.forks_count + '</p>')
-                    .append('<p>Last Updated: ' + repo.updated_at + '</p>')
                     .append('<br>');
 
 //                function fork(f) {
