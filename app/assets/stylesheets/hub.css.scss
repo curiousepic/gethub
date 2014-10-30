@@ -1,3 +1,34 @@
 // Place all the styles related to the hub controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: helvetica;
+}
+
+img {
+  border-radius: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #4183C4;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #4183C4;
+}
+
+.subtle {
+  color: #777777;
+  line-height: 0.45;
+}
+
+p {
+  line-height: 0.6;
+}
+
+h1 {
+  line-height: 0.6;
+}
