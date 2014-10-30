@@ -41,5 +41,8 @@ $(document).on('ready', function () {
 //                    }
 //                }
         });
+
+        $("h3:contains('gethub')")
+            .append(' Whoa, Meta!');
     });
 });
